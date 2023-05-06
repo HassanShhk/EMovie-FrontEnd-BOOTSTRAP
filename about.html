@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="Style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MovieShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="logo.png" alt="" height= "46px">
+      <a class="navbar-brand" href="Home.html">MovieShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">ContactUs</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary btn-sm" type="submit">Search</button>
+        </form>
+
+        <div class="mx-2">
+         <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- LogInModal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Log in</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <main class="form-signin w-100 m-auto">
+          <div class="container">
+          <form>
+
+            <center><img class="mb-4" src="https://freepngimg.com/download/youtube/62644-profile-account-google-icons-computer-user-iconfinder.png" alt="" width="72" height="57"></center>
+          <center><h1 class="h3 mb-3 fw-normal">Please Log in</h1></center>
+        
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control my-4" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="checkbox mb-3 my-3">
+              <label>
+                <input type="checkbox" value="admin"> Admin
+              </label>
+              <label class="mx-4">
+                <input type="checkbox" value="user"> User
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
+         
+          </form>
+        </div>
+        </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button"   class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignIpModal -->
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signUpModalLabel">Sign in</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+          <div class="col-12">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John">
+          </div>
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-12">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+
+          <div class="checkbox mb-3 my-3">
+            <label>
+              <input type="checkbox" value="admin"> Admin
+            </label>
+            <label class="mx-4">
+              <input type="checkbox" value="user"> User
+            </label>
+          </div>
+          
+          <div class="col-12 d-flex" style="justify-content: center">
+            <button type="submit" class="btn btn-primary ">Create Account</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br><br><br>
+  <div class="container my-4">
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1">Legal and Ethical Considerations<span class="text-muted">
+             </span></h2>
+        <p class="lead">As the owner of a website that offers movie downloads, it is important to understand the legal
+          and ethical considerations involved in providing this service to your users. While there is a demand for movie
+          downloads, it is important to only offer films that are in the public domain or have been authorized for
+          distribution by the copyright owner.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" width="500" height="500" src="pop.png" alt="" </img>
+      </div>
+    </div>
+<br><br><br>
+    <div class="row featurette d-flex justify-content-center align-items-center my-4">
+      <div class="col-md-6 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">High-Quality Downloads</h2>
+        <p class="lead">It is also important to provide high-quality downloads that are free of viruses and malware.
+          Users should be able to easily navigate your website and find the movies they are looking for. Providing
+          information on the quality and file size of the downloads can also help users make informed decisions.</p>
+      </div>
+      <div class="col-md-4 order-md-1">
+        <img class="img-fluid" width="500" height="500" src="movie2.png" alt="" </img>
+      </div>
+    </div>
+<br><br><br>
+    <div class="row featurette d-flex justify-content-center align-items-center my-4">
+      <div class="col-md-6 order-md-1 my-2">
+        <h2 class="featurette-heading fw-normal lh-1">
+            Supporting the Film Industry </h2>
+        <p class="lead my-2">Finally, it is important to respect the film industry and support it by promoting legal
+          methods of accessing movies such as purchasing or renting films through authorized channels. By providing a
+          safe and legal service for movie downloads, you can build a loyal user base and contribute to a positive
+          online community.</p>
+      </div>
+      <div class="col-md-4 order-md-2">
+        <img class="img-fluid" width="500" height="500" src="mov5.png" alt="" </img>
+      </div>
+    </div>
+
+  </div>
+
+<br><br><br>
+  <footer class="container">
+    <p class="float-end"><a href="#"><button   class="btn btn-primary">Back to Top</button></a></p>
+    <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
