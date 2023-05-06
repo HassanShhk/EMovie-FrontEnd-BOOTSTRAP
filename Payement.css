@@ -1,0 +1,106 @@
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+.container{ padding-top: 21px;
+    padding-bottom: 21px;
+    background-color: whitesmoke;
+    width: 57%;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    background-color: #b6b6ff;
+
+
+    padding: 30px 10px;
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+}
+
+p {
+    margin: 0px;
+}
+
+
+.container .h8 {
+    
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+       width: 30%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    border: none;
+    margin-left: 158px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    margin-top: 18px;
+
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: #5a779e;
+    border: 2px solid transparent;
+    height: 37px;
+    padding-left: 69px;
+    vertical-align: middle;
+    margin-left: -71px;
+}
+
+.form-control:focus {
+    color: white;
+ background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -102px;
+    margin-top: 20px;
+
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}

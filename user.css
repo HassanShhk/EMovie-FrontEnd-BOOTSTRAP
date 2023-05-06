@@ -1,0 +1,182 @@
+li {
+ 
+    display: inline;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  ul {
+    background-color: #dddddd;
+  }
+  li {
+    float: left;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkred;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: black;
+    color: White;
+  }
+  .ion{
+    color: grey;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    position: absolute;
+    left: 380px;
+  }
+  .ions{
+    color: white;
+    width: 25px;
+    height: 15px;
+    top: 52px;
+    left: 35px;
+  }
+  .inp{
+    height: 42px;
+    position: relative;
+    width:204px;
+    margin-left: 76px;
+    background-color: darkred;
+    font-weight: 700;
+    color: white;
+    border-style: none;
+  }
+  .inp:hover{
+    background-color: #1f3358;
+  }
+  .h{
+    color: white;
+    margin-left: 30px;
+  }
+  .imga{
+    width: 20px;
+    height: 20px;
+  }
+  .ab:hover{
+    color: white;
+  }
+  .l{
+    margin-left: 137px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+  .lia{
+    margin-left: 35px;
+    font-weight: 600;
+  }
+  .conatiner{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 11fr;
+    grid-template-areas: "header header"
+    "sidebar main"
+    "sidebar main"
+    "footer footer";
+    grid-template-rows: 1.3fr 6.7fr 6fr;
+    grid-gap: 0.2rem;
+    color: whitesmoke;
+    padding-top: 48px;
+  }
+  .header{
+    grid-area: header;
+    background-color: #0b2149;
+    top: 25px;
+    text-align: left;
+    margin-top: 37px;
+  }
+  .h{
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 47px;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    background-color: darkred;
+    margin-top: 7px;
+    max-width: 250px;
+    width: 30%;
+  }
+  
+  .main{
+    grid-area: main;
+    background-color: whitesmoke;
+  }
+  .footer{
+    grid-area: footer;
+    background-color: #0b2149;
+    height: 120px;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+   }
+   ::placeholder{
+    color: white;
+   }
+   .po{
+    color: white;
+    margin-left: 30px;
+    font-weight: 900;
+   
+    
+   }
+   .lin{
+    color: White;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 8px;
+    display: inline;
+   }
+   .ho:hover{
+    background-color: black;
+   }
+   .btn{
+    margin-left: 550px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ac2929;
+    color: white;
+    font-weight: 800;
+   }
+   .btn:hover{
+    background-color: #0b2149;
+   }
+   .p1{
+    color: white;
+    margin-left: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+   }
+   .about{
+    display: flex;
+    flex-direction: column;
+   }
